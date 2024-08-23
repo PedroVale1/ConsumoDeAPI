@@ -1,0 +1,67 @@
+/* Estilos globais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Cor de fundo mais escura */
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1; /* Cor do texto clara para contraste com o fundo escuro */
+}
+
+/* Estilos para o título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço acima do título */
+    color: #ecf0f1; /* Cor do texto clara para contraste com o fundo escuro */
+}
+
+/* Estilos para o campo de pesquisa */
+#search {
+    display: block; /* Garante que o input seja tratado como bloco */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+    padding: 10px;
+    border: 1px solid #34495e; /* Cor da borda do input */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 80%; /* Define a largura do campo de pesquisa */
+    max-width: 600px; /* Define a largura máxima do campo de pesquisa */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o container de personagens */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para cada cartão de personagem */
+.personagem-card {
+    border: 1px solid #34495e; /* Cor da borda um pouco mais escura que o fundo do corpo */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #34495e; /* Cor de fundo do cartão, ligeiramente mais clara que a borda */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais acentuada para destacar */
+}
+
+/* Estilos para a imagem do personagem */
+.personagem-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Estilos para o título e parágrafos dentro do cartão */
+.personagem-card h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #ecf0f1; /* Cor do texto no cartão clara para contraste com o fundo escuro */
+}
+
+.personagem-card p {
+    margin: 5px 0;
+    color: #ecf0f1; /* Cor do texto no cartão clara para contraste com o fundo escuro */
+}
